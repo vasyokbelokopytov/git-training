@@ -9,7 +9,7 @@ import {
 import { DeleteForeverOutlined } from '@mui/icons-material';
 import { Task } from '../app/types';
 import { useAppDispatch } from '../app/hooks';
-import { completedChange, taskRemoved } from '../features/tasks/tasksSlice';
+import { completedChange, taskRemoved } from '../features/tasks/todoSlice';
 
 interface Props {
   task: Task;
