@@ -1,16 +1,16 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Task } from '../../app/types';
 
-interface TodoState {
+interface TasksState {
   tasks: Task[];
 }
 
-const initialState: TodoState = {
+const initialState: TasksState = {
   tasks: [],
 };
 
-const todoSlice = createSlice({
-  name: 'todo',
+const tasksSlice = createSlice({
+  name: 'tasks',
   initialState,
   reducers: {
     taskCreated: (state, { payload }: PayloadAction<string>) => {
@@ -35,5 +35,5 @@ const todoSlice = createSlice({
   },
 });
 
-export const { completedChange, taskCreated, taskRemoved } = todoSlice.actions;
-export default todoSlice.reducer;
+export const { completedChange, taskCreated, taskRemoved } = tasksSlice.actions;
+export default tasksSlice.reducer;

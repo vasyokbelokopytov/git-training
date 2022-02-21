@@ -1,7 +1,7 @@
 import { Button, Stack, TextField } from '@mui/material';
 import React, { useState } from 'react';
 import { useAppDispatch } from '../app/hooks';
-import { taskCreated } from '../features/tasks/todoSlice';
+import { taskCreated } from '../features/tasks/tasksSlice';
 
 export const Form: React.FC = () => {
   const [taskText, setTaskText] = useState('');
