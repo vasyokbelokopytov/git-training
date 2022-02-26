@@ -3,3 +3,7 @@ export interface Task {
   text: string;
   completed: boolean;
 }
+
+export interface User {
+  id: number;
+}
