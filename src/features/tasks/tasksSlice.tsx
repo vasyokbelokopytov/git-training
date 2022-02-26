@@ -3,10 +3,12 @@ import { Task } from '../../app/types';
 
 interface TasksState {
   tasks: Task[];
+  currentTask: number | null;
 }
 
 const initialState: TasksState = {
   tasks: [],
+  currentTask: null,
 };
 
 const tasksSlice = createSlice({
